@@ -33,4 +33,4 @@ app.get('/', function (request, response) {
     response.render('home', {layout: false});
 });
 
-app.listen(7000);
+app.listen(process.env.PORT || 5000);
